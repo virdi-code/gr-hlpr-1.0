@@ -1,0 +1,22 @@
+{
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "storage",
+        "declarativeContent"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.goodreads.com/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "description": "Helper for goodreads.",
+    "manifest_version": 3,
+    "name": "Gr-Hlpr",
+    "version": "1.0.0"
+}
