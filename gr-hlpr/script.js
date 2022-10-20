@@ -18,9 +18,8 @@ window.onload=function(){
     if(pathname.includes("/author/show")){
         author = document.querySelector('meta[property="og:title"]').content
         linkToGo = searchURL + author
-        setTimeout(() => {
-            window.open(linkToGo)
-        },2000); 
+        //setTimeout(() => {window.open(linkToGo)},2000); 
+        chrome.runtime.sendMessage({link:linkToGo})
     }
 
 }
