@@ -1,5 +1,5 @@
 var pathname = window.location.pathname
-var searchURL = "https://book4you.org/s/"
+var searchURL = ""
 
 window.onload=function(){
 
